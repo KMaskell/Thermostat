@@ -1,0 +1,6 @@
+- Redo old smaller projects (Airport & FizzBuzz)
+- Codewars JS
+- Define a method, clauses, how to run?
+  Rspec/ Capybara
+- JS -Jasmine
+- Visibility -console log

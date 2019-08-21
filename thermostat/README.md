@@ -1,3 +1,41 @@
+Javascrpt Notes
+
+- Log something to the console (don't forget the semi-colon at the end of every line!)
+  console.log(3 + 4); => 7
+
+- comment out
+  // or /* */ for multi-line (or in the middle of a line fo code)
+
+- 7 x fundamental data types: number, string, boolean, null, undefined, symbol, object
+
+-  Create a Greeting object with a method hello(person), which will return "Hello, Maker!" when you type greeting.hello("Maker")
+To create a Greeting object, we use the function keyword:
+
+function Greeting() {
+
+}
+To define a method:
+
+Greeting.prototype.hello = function(person) {
+  return 'Hello, ' + person + '!';
+}
+And to use it:
+
+var greeting = new Greeting();
+greeting.hello('Maker');
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Welcome to JavaScript
 
 ## What is JavaScript?
