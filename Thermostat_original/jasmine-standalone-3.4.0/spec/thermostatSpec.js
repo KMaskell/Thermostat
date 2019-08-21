@@ -20,11 +20,20 @@ describe('Thermostat', function(){
     thermostat.down();
     expect(thermostat.getCurrentTemperature()).toEqual(19);
   });
-
+//this for loop is used instead of calling down 11 times
   it('has a minimum temperature of 10 degrees', function(){
     for (var i = 0; i < 11; i++) {
       thermostat.down();
     }
     expect(thermostat.getCurrentTemperature()).toEqual(10);
+  });
+
+  it('has power saving mode on by default', function() {
+    expect(thermostat.isPowerSavingModeOn()).toBe(true);
+  });
+
+  it('can switch PSM off', function() {
+    thermostat.switchPowerSavingModeOff();
+    expect(thermostat.isPowerSavingModeOn()).toBe(true);
   });
 });
