@@ -5,16 +5,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="src/thermostat.js"></script>
     <script src="src/interface.js"></script>
+    <link rel="stylesheet" href="style"> 
     <style>
     p {
       width: 200px;
       padding: 30px;
       height: 85px;
       float: none;
-      margin: 50px;
-      box-shadow: 10px 12px #666666;
+      margin: 20px;
+      box-shadow: 10px 10px #666666;
+      border-style: solid;
+      border: #000000;
     } </style>
-  </head>
+
+<style>
+    img {
+      width: 250px;
+      padding: 30px;
+      height: 150px;
+      float: none;
+      margin: 20px;
+      /* box-shadow: 5px 5px #666666; */
+      /* border: #000000; */
+      /* border-style: solid; */
+    } 
+    
+    body { background-image: url("https://wallpaperaccess.com/full/448242.jpg")
+    }
+    
+    </style>
+       </head>
   <body>
     <section>
       <center>
@@ -30,17 +50,19 @@
             </section>
         <h1 id="temperature"></h1>
       <p><b>Temperature:</b> 
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
+        <button style="outline: 0;" id="temp-up">+</button>
+        <button style="outline: 0;" id="temp-down">-</button>
+        <button id="temp-reset">reset</button>
         <br>
         <br>
-        <b>Power Save Mode is: </b><span id="power-saving-status"><b>ON</b></span>
+        <b>Power Save Mode is: </b><span id="power-saving"><b>ON</b></span>
         <br>
         <br>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
-      </p></center>
+        <button id="psm-on">PSM on</button>
+        <button id="psm-off">PSM off</button>
+      </p>
+      <div><img id="theDiv" src="http://po.st/lSioAP" alt="You gonna bark all day little doggy?"></div></center>
     </section>
+    <script src="js/thermostat.js"></script>
   </body>
 </html>
