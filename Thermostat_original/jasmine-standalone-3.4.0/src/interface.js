@@ -62,4 +62,6 @@ $('#current-city').change(function() {
 
   // $(".bg").css("background-image", url("https://images.pexels.com/photos/412462/pexels-photo-412462.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 
+  $('temperature').css("font-size", "50px");
+
 });
